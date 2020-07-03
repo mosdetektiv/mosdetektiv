@@ -1,8 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine on
-RewriteRule ^([^/]+) $1 [L]
-
-RewriteCond %{HTTP_HOST} ^mosdetektive.ru\.ru
-RewriteRule ^(.*)$ http://mos-d.ru/$1 [R=301,L]
-RewriteCond %{HTTP_HOST} ^www.mosdetektive\.ru
-RewriteRule ^(.*)$ http://mos-d.ru/$1 [R=301,L]
